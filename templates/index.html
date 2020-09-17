@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+<html>
+<body>
+{% block header %}Liczymy paliwko?{% endblock %}
+{% block content %}
+<form method="post" action="">
+    <p>Podaj przebieg przed tankowaniem <input name="przebieg_przed" /></p>
+    <p>Podaj przebieg po tankowaniu <input name="przebieg_po" /></p>
+    <p>Ile litrów zatankowałeś? <input name="ile_paliwa_zatankowano" /></p>
+    <br>
+    <p><a href="result.html"><button>Policz</button></a></p>
+</form>
+<font color="red">{errors}</font>
+{% endblock %}
+</body>
+</html>
